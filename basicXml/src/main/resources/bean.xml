@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--创建对象交给spring进行管理-->
+    <!--bean的作用范围调整 scope标签：
+        1.sington：单例
+        2.prototype：多例
+        3.request:作用于web应用的请求范围
+        4.session:作用于web应用的会话范围
+        global-session:集群环境的会话范围
+     -->
+    <!--bean的生命周期
+         单例对象：
+            出生：容器创建时对象出生(解析配置文件的时候就创建)
+            活着：容器还在，对象则一直活着
+            死亡：容器销毁，对象消亡
+         多例对象：
+            出生：使用对象的时候spring创建(调用对象方法的时候才创建)
+            活着：只要在使用就一直存在
+            死亡：当对象长时间不用的时，由java的垃圾回收器进行回收
+    -->
+    <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl"></bean>
+    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl"></bean>
+</beans>

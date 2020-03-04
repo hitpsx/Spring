@@ -1,10 +1,107 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
-        https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <beans xmlns="http://www.springframework.org/schema/beans"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:context="http://www.springframework.org/schema/context"
+           xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!--创建对象交给spring进行管理-->
-    <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl"></bean>
-    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl"></bean>
+        <context:component-scan base-package="com.itheima"></context:component-scan>
+
+
+
+    <!--    </beans>-->
+<!--    &lt;!&ndash;创建对象交给spring进行管理&ndash;&gt;-->
+<!--    &lt;!&ndash;bean的作用范围调整 scope标签：-->
+<!--        1.sington：单例-->
+<!--        2.prototype：多例-->
+<!--        3.request:作用于web应用的请求范围-->
+<!--        4.session:作用于web应用的会话范围-->
+<!--        global-session:集群环境的会话范围-->
+<!--     &ndash;&gt;-->
+<!--    &lt;!&ndash;bean的生命周期-->
+<!--         单例对象：-->
+<!--            出生：容器创建时对象出生(解析配置文件的时候就创建)-->
+<!--            活着：容器还在，对象则一直活着-->
+<!--            死亡：容器销毁，对象消亡-->
+<!--         多例对象：-->
+<!--            出生：使用对象的时候spring创建(调用对象方法的时候才创建)-->
+<!--            活着：只要在使用就一直存在-->
+<!--            死亡：当对象长时间不用的时，由java的垃圾回收器进行回收-->
+<!--    &ndash;&gt;-->
+
+<!--    &lt;!&ndash; spring的依赖注入-->
+<!--        IOC的作用：降低程序见的耦合(依赖关系)-->
+<!--        在当前类需要用到其他类的对象，由Spring为我们提供，我们只需要在配置文件中说明-->
+<!--        依赖关系的维护：依赖注入-->
+<!--        三类注入类型：-->
+<!--        1.基本类型和String-->
+<!--        2.其他bean类型-->
+<!--        3.复杂类型/集合类型-->
+<!--        三种注入方式:-->
+<!--        1.使用构造方式-->
+<!--        2.使用set方法-->
+<!--        3.使用注解提供-->
+<!--    &ndash;&gt;-->
+<!--    <bean id="accountService" class="com.itheima.service.impl.AccountServiceImpl"></bean>-->
+<!--    &lt;!&ndash; 构造函数注入-->
+<!--        使用标签constuctor-arg-->
+<!--        index:用于指定要注入的数据给构造函数中的指定索引位置的参数赋值，从0开始-->
+<!--        type:注入的参数类型-->
+<!--        name:用于指定给构造函数中指定名称的参数赋值-->
+<!--        value:用于给基本类型和string类型的复制-->
+<!--        ref:用于指定其他的bean类型数据-->
+
+<!--        特点:在获取bean对象时,注入数据是必须的操作，否则对象无法创建成功。-->
+
+<!--    &ndash;&gt;-->
+<!--&lt;!&ndash;    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl">&ndash;&gt;-->
+<!--&lt;!&ndash;        <constructor-arg name="name" value="hello"  ></constructor-arg>&ndash;&gt;-->
+<!--&lt;!&ndash;        <constructor-arg name="date" ref="now"></constructor-arg>&ndash;&gt;-->
+<!--&lt;!&ndash;    </bean>&ndash;&gt;-->
+<!--&lt;!&ndash;    <bean id="now" class="java.util.Date"></bean>&ndash;&gt;-->
+
+<!--    &lt;!&ndash; set方法注入  经常用-->
+<!--        涉及的标签：property-->
+<!--        标签属性：-->
+<!--            name:用于指定注入时所调用的set方法名称-->
+<!--            value:用于给基本类型和string类型的复制-->
+<!--            ref:用于指定其他的bean类型数据-->
+<!--        特征：创建对象的时候没有明确的限制,直接可以使用默认构造函数-->
+<!--    &ndash;&gt;-->
+<!--    <bean id="accountDao" class="com.itheima.dao.impl.AccountDaoImpl">-->
+<!--        <property name="name" value="hello"/>-->
+<!--        <property name="date" ref="now"/>-->
+<!--    </bean>-->
+<!--    <bean id="now" class="java.util.Date"></bean>-->
+
+<!--    &lt;!&ndash;-->
+<!--        复制类型注入：-->
+<!--        用于给list注入的标签：-->
+<!--            list  array  set-->
+<!--        用于给map结构集合注入的标签：-->
+<!--            map  props-->
+<!--        结构相同，标签可以互换-->
+<!--     &ndash;&gt;-->
+<!--    <bean id="accountDao2" class="com.itheima.dao.impl.AccountDaoImpl2">-->
+<!--        <property name="mystrs">-->
+<!--            <array>-->
+<!--                <value>AA</value>-->
+<!--                <value>BB</value>-->
+<!--            </array>-->
+<!--        </property>-->
+<!--        <property name="mypros">-->
+<!--            <props>-->
+<!--                <prop key="h">y</prop>-->
+<!--                <prop key="y">y</prop>-->
+<!--            </props>-->
+<!--        </property>-->
+<!--        <property name="myset">-->
+<!--            <set>-->
+<!--                <value>a</value>-->
+<!--                <value>b</value>-->
+<!--            </set>-->
+<!--        </property>-->
+<!--    </bean>-->
 </beans>

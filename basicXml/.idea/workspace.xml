@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d5a577aa-69c9-4544-90d7-599e5e034b06" name="Default Changelist" comment="" />
+    <list default="true" id="d5a577aa-69c9-4544-90d7-599e5e034b06" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/dao/impl/AccountDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/dao/impl/AccountDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/service/impl/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/service/impl/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/ui/client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/ui/client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bean.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bean.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/dao/impl/AccountDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/dao/impl/AccountDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/service/impl/AccountServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/service/impl/AccountServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/ui/client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/ui/client.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +26,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1YW9PDPCpmga9fXQSGD3OsfqJYH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -23,12 +38,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.itheima.dao.impl" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -73,6 +94,7 @@
       <option name="presentableId" value="Default" />
       <updated>1583047456945</updated>
       <workItem from="1583047461214" duration="7153000" />
+      <workItem from="1583324774031" duration="7287000" />
     </task>
     <servers />
   </component>
@@ -80,33 +102,39 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="653" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1583048571523">
-      <screen x="62" y="0" width="1474" height="864" />
+    <state x="654" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1583328876712">
+      <screen x="63" y="0" width="1473" height="864" />
     </state>
     <state x="653" y="204" key="#com.intellij.ide.util.MemberChooser/62.0.1474.864@62.0.1474.864" timestamp="1583048571523" />
+    <state x="654" y="204" key="#com.intellij.ide.util.MemberChooser/63.0.1473.864@63.0.1473.864" timestamp="1583328876712" />
     <state x="622" y="328" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1583047750767">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="622" y="328" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/62.0.1474.864@62.0.1474.864" timestamp="1583047750767" />
-    <state width="1416" height="195" key="GridCell.Tab.0.bottom" timestamp="1583068034074">
-      <screen x="62" y="0" width="1474" height="864" />
+    <state width="1430" height="195" key="GridCell.Tab.0.bottom" timestamp="1583332289895">
+      <screen x="63" y="0" width="1473" height="864" />
     </state>
     <state width="1416" height="195" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1583068034074" />
-    <state width="1416" height="195" key="GridCell.Tab.0.center" timestamp="1583068034074">
-      <screen x="62" y="0" width="1474" height="864" />
+    <state width="1430" height="195" key="GridCell.Tab.0.bottom/63.0.1473.864@63.0.1473.864" timestamp="1583332289895" />
+    <state width="1430" height="195" key="GridCell.Tab.0.center" timestamp="1583332289895">
+      <screen x="63" y="0" width="1473" height="864" />
     </state>
     <state width="1416" height="195" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1583068034074" />
-    <state width="1416" height="195" key="GridCell.Tab.0.left" timestamp="1583068034074">
-      <screen x="62" y="0" width="1474" height="864" />
+    <state width="1430" height="195" key="GridCell.Tab.0.center/63.0.1473.864@63.0.1473.864" timestamp="1583332289895" />
+    <state width="1430" height="195" key="GridCell.Tab.0.left" timestamp="1583332289895">
+      <screen x="63" y="0" width="1473" height="864" />
     </state>
     <state width="1416" height="195" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1583068034074" />
-    <state width="1416" height="195" key="GridCell.Tab.0.right" timestamp="1583068034074">
-      <screen x="62" y="0" width="1474" height="864" />
+    <state width="1430" height="195" key="GridCell.Tab.0.left/63.0.1473.864@63.0.1473.864" timestamp="1583332289895" />
+    <state width="1430" height="195" key="GridCell.Tab.0.right" timestamp="1583332289895">
+      <screen x="63" y="0" width="1473" height="864" />
     </state>
     <state width="1416" height="195" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1583068034074" />
-    <state x="198" y="15" key="SettingsEditor" timestamp="1583048903339">
-      <screen x="62" y="0" width="1474" height="864" />
+    <state width="1430" height="195" key="GridCell.Tab.0.right/63.0.1473.864@63.0.1473.864" timestamp="1583332289895" />
+    <state x="199" y="15" key="SettingsEditor" timestamp="1583332246539">
+      <screen x="63" y="0" width="1473" height="864" />
     </state>
     <state x="198" y="15" key="SettingsEditor/62.0.1474.864@62.0.1474.864" timestamp="1583048903339" />
+    <state x="199" y="15" key="SettingsEditor/63.0.1473.864@63.0.1473.864" timestamp="1583332246539" />
   </component>
 </project>

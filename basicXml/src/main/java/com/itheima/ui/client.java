@@ -1,6 +1,7 @@
 package com.itheima.ui;
 
 import com.itheima.dao.AccountDao;
+import com.itheima.dao.impl.AccountDaoImpl;
 import com.itheima.service.IAccountService;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
@@ -25,17 +26,18 @@ public class client {
          *
          *   BeanFactory：需要的时候才创建  (适用对象：多例)
          */
-        //ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
+        ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
         //根据id获取Bean对象
 
-//        IAccountService as = (IAccountService) ac.getBean("accountService");
-//        AccountDao ad = (AccountDao) ac.getBean("accountDao");
-//        ad.saveAccount();
+        IAccountService as = (IAccountService) ac.getBean("accountDaoImpl");
+       // AccountDao ad = (AccountDao) ac.getBean("accountDao");
+        as .saveAccount();
         //--------------beanFactory----------------
-        Resource resource=new ClassPathResource("bean.xml");
-        BeanFactory bean=new XmlBeanFactory(resource);
-        IAccountService ac=(IAccountService) bean.getBean("accountService");
-        ac.saveAccount();
-
+//        Resource resource=new ClassPathResource("bean.xml");
+//        BeanFactory bean=new XmlBeanFactory(resource);
+//        AccountDaoImpl as=(AccountDaoImpl) bean.getBean("accountDaoImpl");
+//        as.saveAccount();
+//        AccountDao ac=(AccountDao) bean.getBean("accountDao2");
+//        ac.saveAccount();
     }
 }

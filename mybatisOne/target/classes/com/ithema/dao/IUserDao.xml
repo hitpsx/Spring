@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ithema.dao.IUserDao">
+    <select id="findAll" resultType="com.ithema.domain.Account">
+        select * from `test`;
+    </select>
+
+    <insert id="saveUser" parameterType="com.ithema.domain.Account">
+        insert into test(id,name) values (#{id},#{name});
+    </insert>
+
+    <delete id="deleteAccount" parameterType="java.lang.Integer">
+        delete from test where id=#{whatever}
+    </delete>
+</mapper>

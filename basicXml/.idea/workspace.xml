@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5a577aa-69c9-4544-90d7-599e5e034b06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../basicXML2/basicXML2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../basicAop/basicAop.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -133,6 +134,9 @@
       <workItem from="1583564995023" duration="11440000" />
       <workItem from="1583595680950" duration="983000" />
       <workItem from="1583758301246" duration="3676000" />
+      <workItem from="1583843251419" duration="1818000" />
+      <workItem from="1584016657054" duration="2376000" />
+      <workItem from="1584712256860" duration="55000" />
     </task>
     <servers />
   </component>
@@ -202,11 +206,12 @@
       <screen x="63" y="0" width="1473" height="864" />
     </state>
     <state x="530" y="175" key="extract.method.dialog/63.0.1473.864@63.0.1473.864" timestamp="1583569031178" />
-    <state x="211" y="22" key="new project wizard" timestamp="1583761174910">
-      <screen x="65" y="0" width="1471" height="864" />
+    <state x="208" y="22" key="new project wizard" timestamp="1584712309458">
+      <screen x="62" y="0" width="1474" height="864" />
     </state>
+    <state x="208" y="22" key="new project wizard/62.0.1474.864@62.0.1474.864" timestamp="1584712309458" />
     <state x="209" y="39" key="new project wizard/63.0.1473.864@63.0.1473.864" timestamp="1583596357487" />
-    <state x="211" y="22" key="new project wizard/65.0.1471.864@65.0.1471.864" timestamp="1583761174910" />
+    <state x="211" y="22" key="new project wizard/65.0.1471.864@65.0.1471.864" timestamp="1584019985648" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/basicXml$AccountServiceTest_test.ic" NAME="AccountServiceTest.test Coverage Results" MODIFIED="1583594654255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

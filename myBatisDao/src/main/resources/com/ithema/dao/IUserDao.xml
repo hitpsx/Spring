@@ -20,7 +20,4 @@
         delete from test where id=#{whatever}
     </delete>
 
-    <select id="findQvo" parameterType="com.ithema.domain.Qv" resultType="com.ithema.domain.Account">
-        select * from test where name like #{account.name}
-    </select>
 </mapper>

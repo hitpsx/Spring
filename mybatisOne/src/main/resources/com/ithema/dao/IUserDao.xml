@@ -2,7 +2,13 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.ithema.dao.IUserDao">
-    <select id="findAll" resultType="com.ithema.domain.Account">
+    <resultMap id="accountMap" type="com.ithema.domain.Account">
+        <!-- 主键字段对应 -->
+        <id property="userID" column="id"></id>
+        <!--非主键字段的对应-->
+        <result property="userName" column="name"></result>
+    </resultMap>
+    <select id="findAll" resultMap="accountMap">
         select * from `test`;
     </select>
 
@@ -13,4 +19,8 @@
     <delete id="deleteAccount" parameterType="java.lang.Integer">
         delete from test where id=#{whatever}
     </delete>
+
+    <select id="findQvo" parameterType="com.ithema.domain.Qv" resultType="com.ithema.domain.Account">
+        select * from test where name like #{account.name}
+    </select>
 </mapper>
